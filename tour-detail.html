@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Tour — Old Africa Adventures</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="tours">
+
+  <header class="site-header" id="site-header"></header>
+
+  <main id="tourPage" style="display:none;">
+    <div class="container breadcrumb">
+      <a href="index.html">Home</a> / <a href="tours.html">Tours</a> / <span id="crumbName">Tour</span>
+    </div>
+
+    <section style="padding:0;">
+      <div class="tour-hero-media"><img id="tourHeroImg" src="" alt=""></div>
+    </section>
+
+    <div class="container" style="position:relative;">
+      <div style="padding-top:34px; max-width:720px;">
+        <div class="tour-tags" id="tourTags"></div>
+        <h1 style="font-size:2rem;" id="tourName">Tour</h1>
+        <p class="tour-subtitle" id="tourShortDesc"></p>
+        <p style="color:var(--ink-500); font-size:0.9rem;" id="tourMeta"></p>
+      </div>
+
+      <div class="tour-quickfacts" id="tourQuickFacts"></div>
+
+      <div class="tour-layout" style="margin-top:24px;">
+        <div class="tour-main">
+          <div class="tabs">
+            <span class="tab active" data-target="tab-overview">Overview</span>
+            <span class="tab" data-target="tab-itinerary">Itinerary</span>
+            <span class="tab" data-target="tab-inclusions">Inclusions</span>
+            <span class="tab" data-target="tab-exclusions">Exclusions</span>
+            <span class="tab" data-target="tab-gallery">Gallery</span>
+          </div>
+
+          <div class="tab-panel" id="tab-overview">
+            <h3>Overview</h3>
+            <p id="tourOverview"></p>
+
+            <h4 style="font-size:1.05rem; margin-top:32px;">Tour Highlights</h4>
+            <div class="grid grid-2" id="tourHighlights" style="margin-top:16px;"></div>
+
+            <h4 style="font-size:1.05rem; margin-top:32px;">Why Book This Tour</h4>
+            <ul class="check-list check-list--positive" id="tourWhyGo" style="margin-top:12px;"></ul>
+
+            <div class="ph-media card-media" style="border-radius:8px; margin-top:28px;"
+              id="tourOverviewImgWrap"><img id="tourOverviewImg" src="" alt="">
+            </div>
+
+            <div class="tour-dest-callout" id="tourDestCallout"></div>
+          </div>
+
+          <div class="tab-panel" id="tab-itinerary" style="display:none;">
+            <h3>Itinerary</h3>
+            <p style="font-size:0.88rem; color:var(--ink-500); margin-top:-6px;">A day-by-day look at how this tour
+              unfolds — exact timings may vary slightly with weather and park conditions.</p>
+            <div class="itinerary-timeline" id="tourItinerary" style="margin-top:24px;"></div>
+          </div>
+
+          <div class="tab-panel" id="tab-inclusions" style="display:none;">
+            <h3>Inclusions</h3>
+            <p style="font-size:0.88rem; color:var(--ink-500); margin-top:-6px;">Everything below is covered in the
+              price shown, with no hidden extras.</p>
+            <ul class="check-list check-list--positive" id="tourInclusions" style="margin-top:16px;"></ul>
+          </div>
+
+          <div class="tab-panel" id="tab-exclusions" style="display:none;">
+            <h3>Exclusions</h3>
+            <p style="font-size:0.88rem; color:var(--ink-500); margin-top:-6px;">Worth budgeting for separately —
+              ask us about adding any of these to your quote.</p>
+            <ul class="check-list check-list--negative" id="tourExclusions" style="margin-top:16px;"></ul>
+          </div>
+
+          <div class="tab-panel" id="tab-gallery" style="display:none;">
+            <h3>Gallery</h3>
+            <div class="grid grid-3" id="tourGallery"></div>
+          </div>
+        </div>
+
+        <div class="tour-booking">
+          <span class="tour-booking-eyebrow">Starting From</span>
+          <div class="tour-price"><span id="tourPrice"></span> <span id="tourPriceUnit">/ person</span></div>
+          <ul class="tour-facts">
+            <li><span>Group Size</span><span id="tourGroupSize"></span></li>
+            <li><span>Duration</span><span id="tourDuration"></span></li>
+            <li><span>Difficulty</span><span id="tourDifficulty"></span></li>
+          </ul>
+          <div class="tour-includes-box">
+            <p class="tour-includes-label">What's Included</p>
+            <ul class="check-list check-list--positive" id="tourIncludesPreview"></ul>
+          </div>
+          <a href="quote.html" class="btn btn-clay btn-block">Get a Quote</a>
+          <p class="form-note text-center">Need help? <a href="https://wa.me/254722888337"
+              style="color:var(--green-900); font-weight:600;">Chat on WhatsApp</a></p>
+          <div class="tour-trust">
+            <div class="tour-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M20 6 9 17l-5-5" />
+              </svg> Local expert guides on every trip</div>
+            <div class="tour-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M20 6 9 17l-5-5" />
+              </svg> Handpicked lodges & camps</div>
+            <div class="tour-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M20 6 9 17l-5-5" />
+              </svg> Itineraries tailored on request</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="relatedToursSection" class="section-tight" style="display:none; padding-bottom:0;">
+      <div class="container">
+        <h3 style="font-size:1.3rem;">You Might Also Like</h3>
+        <div class="grid grid-3" id="relatedTours" style="margin-top:20px;"></div>
+      </div>
+    </section>
+
+    <div style="height:70px;"></div>
+  </main>
+
+  <section id="tourNotFound" style="display:none;">
+    <div class="container text-center">
+      <h2>Tour not found</h2>
+      <p>We couldn't find that tour. Have a look at everything we offer instead.</p>
+      <a href="tours.html" class="btn btn-clay">View All Tours</a>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="js/tours-data.js"></script>
+  <script src="js/destination-data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/tour-detail.js"></script>
+</body>
+
+</html>

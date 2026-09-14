@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Quote — Old Africa Adventures</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="quote">
+
+  <header class="site-header" id="site-header"></header>
+
+  <main>
+    <section class="hero hero-small"
+      style="background-image:url('https://picsum.photos/seed/quoteelephants/1600/900');">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">PLAN YOUR ADVENTURE</p>
+        <h1>Let's Create Your Perfect Safari</h1>
+        <p class="hero-sub">Tell us about your trip and we'll send you a personalized quote.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="step-track">
+          <div class="step active">
+            <div class="step-num">1</div><span class="step-label">Trip Details</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-num">2</div><span class="step-label">Custom Quote</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-num">3</div><span class="step-label">Your Adventure</span>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="panel">
+            <h3>Tell Us About Your Trip</h3>
+            <form id="quoteForm" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="qname">Full Name</label>
+                  <input type="text" id="qname" name="name" required>
+                </div>
+                <div class="form-field">
+                  <label for="qemail">Email Address</label>
+                  <input type="email" id="qemail" name="email" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="qwhatsapp">WhatsApp Number</label>
+                  <input type="tel" id="qwhatsapp" name="whatsapp" placeholder="+254 7xx xxx xxx">
+                </div>
+                <div class="form-field">
+                  <label for="qtravelers">Number of Travelers</label>
+                  <input type="number" id="qtravelers" name="travelers" min="1" value="2">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="qtype">Trip Type</label>
+                  <select id="qtype" name="tripType">
+                    <option value="">Select a type</option>
+                    <option>Safari</option>
+                    <option>Beach</option>
+                    <option>Adventure</option>
+                    <option>Culture</option>
+                    <option>Custom Itinerary</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="qdates">Preferred Dates</label>
+                  <input type="text" id="qdates" name="dates" placeholder="e.g. 12–18 Dec 2026">
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="qmessage">Message / Special Requests</label>
+                <textarea id="qmessage" name="message" rows="4"
+                  placeholder="Tell us what you're dreaming of..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-clay btn-block">Send Request</button>
+              <div class="form-status" id="quoteStatus"></div>
+              <p class="form-note text-center">We'll get back to you within 24 hours. Prefer WhatsApp? <a
+                  id="quoteStatus-wa" href="https://wa.me/254722888937" target="_blank" rel="noopener"
+                  style="color:var(--green-900); font-weight:600;">Chat with us</a>.</p>
+            </form>
+          </div>
+
+          <div>
+            <p class="section-eyebrow">POPULAR TOURS</p>
+            <div class="panel" style="padding:18px 22px;">
+              <div class="mini-tour">
+                <img src="https://picsum.photos/seed/minitour1/200/200" alt="">
+                <div>
+                  <h6>3 Day Maasai Mara Safari</h6><span>From $450 / person</span>
+                </div>
+              </div>
+              <div class="mini-tour">
+                <img src="https://picsum.photos/seed/minitour2/200/200" alt="">
+                <div>
+                  <h6>5 Day Amboseli Explorer</h6><span>From $680 / person</span>
+                </div>
+              </div>
+              <div class="mini-tour" style="border-bottom:none;">
+                <img src="https://picsum.photos/seed/minitour3/200/200" alt="">
+                <div>
+                  <h6>4 Day Tsavo Adventure</h6><span>From $580 / person</span>
+                </div>
+              </div>
+              <a href="tours.html" class="card-link" style="display:block; margin-top:14px;">View All Tours →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

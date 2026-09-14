@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tours — Old Africa Adventures</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="tours">
+
+  <header class="site-header" id="site-header"></header>
+
+  <main>
+    <section class="hero hero-small" style="background-image:url('assets/images/herdofbuffallos.jpg');">
+      <div class="hero-inner">
+        <h1>Our Tours</h1>
+        <p class="hero-sub">Carefully crafted experiences for every kind of adventurer.</p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="filters" data-controls="tourGrid">
+          <button class="filter-pill active" data-filter="all">All Tours</button>
+          <button class="filter-pill" data-filter="safari">Safari</button>
+          <button class="filter-pill" data-filter="adventure">Adventure</button>
+          <button class="filter-pill" data-filter="culture">Culture</button>
+          <button class="filter-pill" data-filter="beach">Beach</button>
+        </div>
+
+        <div class="grid grid-3" id="tourGrid">
+          <a class="card" href="tour-detail.html?tour=maasai-mara-safari" data-category="safari">
+            <div class="card-media"><img src="assets/images/maasaimara.jpg" alt="Safari jeep on the Mara plains"></div>
+            <div class="card-body">
+              <span class="card-meta">3 DAY</span>
+              <h3>Maasai Mara Safari</h3>
+              <p class="card-meta">Experience the magic of the Mara with game drives and wildlife.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$450 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=amboseli-explorer" data-category="safari">
+            <div class="card-media"><img src="assets/images/elephantswithmtkenyaoverview.jpg"
+                alt="Elephants in Amboseli"></div>
+            <div class="card-body">
+              <span class="card-meta">5 DAY</span>
+              <h3>Amboseli Explorer</h3>
+              <p class="card-meta">Elephants and breathtaking views of Kilimanjaro.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$680 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=tsavo-adventure" data-category="safari">
+            <div class="card-media"><img src="assets/images/elephantsnearlakeintsavo.jpg" alt="Sunset over Tsavo">
+            </div>
+            <div class="card-body">
+              <span class="card-meta">4 DAY</span>
+              <h3>Tsavo Adventure</h3>
+              <p class="card-meta">Discover the wild heart of Kenya's largest parks.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$580 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=mt-kenya-climb" data-category="adventure">
+            <div class="card-media"><img src="assets/images/mountkenya.jpg" alt="Hikers on Mount Kenya"></div>
+            <div class="card-body">
+              <span class="card-meta">6 DAY</span>
+              <h3>Mt. Kenya Climb</h3>
+              <p class="card-meta">Conquer Africa's second highest peak.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$900 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=diani-beach-escape" data-category="beach">
+            <div class="card-media"><img src="https://picsum.photos/seed/tourdiani1/700/560"
+                alt="Diani Beach coastline"></div>
+            <div class="card-body">
+              <span class="card-meta">3 DAY</span>
+              <h3>Diani Beach Escape</h3>
+              <p class="card-meta">Relax on pristine beaches and crystal-clear waters.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$580 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=maasai-cultural-tour" data-category="culture">
+            <div class="card-media"><img src="assets/images/maasaiwomen.jpg" alt="Maasai cultural village visit"></div>
+            <div class="card-body">
+              <span class="card-meta">3 DAY</span>
+              <h3>Maasai Cultural Tour</h3>
+              <p class="card-meta">Connect with the Maasai people and their traditions.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$290 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=nairobi-national-park-safari" data-category="safari">
+            <div class="card-media"><img src="assets/images/zebrasacrossnairobinationalpark.jpg"
+                alt="Lions in Nairobi National Park with the city skyline"></div>
+            <div class="card-body">
+              <span class="card-meta">HALF-DAY</span>
+              <h3>Nairobi National Park Safari</h3>
+              <p class="card-meta">See lions, giraffes and rhinos minutes from the capital's skyline.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$120 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=samburu-safari" data-category="safari">
+            <div class="card-media"><img src="assets/images/maleelephantinsamburu.jpg"
+                alt="Reticulated giraffe in Samburu"></div>
+            <div class="card-body">
+              <span class="card-meta">3 DAY</span>
+              <h3>Samburu Safari</h3>
+              <p class="card-meta">Track rare northern species along the Ewaso Nyiro River.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$520 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=lake-bogoria-day-trip" data-category="safari">
+            <div class="card-media"><img src="assets/images/lakevictoria.jpg"
+                alt="Flamingos and hot springs at Lake Bogoria">
+            </div>
+            <div class="card-body">
+              <span class="card-meta">DAY TRIP</span>
+              <h3>Lake Bogoria Day Trip</h3>
+              <p class="card-meta">Steaming geysers and huge flocks of flamingos in the Rift Valley.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$160 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=lake-naivasha-boat-safari" data-category="adventure">
+            <div class="card-media"><img src="assets/images/boatbythelake.jpg"
+                alt="Boat safari among hippos on Lake Naivasha">
+            </div>
+            <div class="card-body">
+              <span class="card-meta">DAY TRIP</span>
+              <h3>Lake Naivasha Boat Safari</h3>
+              <p class="card-meta">Glide past hippos and fish eagles on a freshwater Rift Valley lake.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$140 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=hells-gate-cycling-safari" data-category="adventure">
+            <div class="card-media"><img
+                src="https://imgs.search.brave.com/LHbnCCz2nAntIYBqf5opGiljgvDcMM-abIsxLl5_S4Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9uYXRp/b25hbC1wYXJrcy5v/cmcvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjUvMTAvSGVsbHMt/R2F0ZS1OYXRpb25h/bC1QYXJrLmpwZw"
+                alt="Cyclists among wildlife in Hell's Gate">
+            </div>
+            <div class="card-body">
+              <span class="card-meta">DAY TRIP</span>
+              <h3>Hell's Gate Cycling Safari</h3>
+              <p class="card-meta">Cycle freely among zebra and giraffe through dramatic gorges.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$130 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=aberdare-tree-hotel-experience" data-category="safari">
+            <div class="card-media"><img
+                src="https://imgs.search.brave.com/Xae40d8YtmlHDR5yMI10Njtc9gC9VnEUW1jEAdYHHa8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/dHNhdm9uYXRpb25h/bHBhcmtrZW55YS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjIvMDQvMjAwMTc0/XzVlZTUwMTAyMTQz/ZjYtNzUweDQ1MC5q/cGc"
+                alt="Tree hotel overlooking a floodlit waterhole in Aberdare"></div>
+            <div class="card-body">
+              <span class="card-meta">2 DAY</span>
+              <h3>Aberdare Tree Hotel Experience</h3>
+              <p class="card-meta">Watch elephants and leopards from a lodge built on stilts.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$340 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=lamu-old-town-cultural-tour" data-category="culture">
+            <div class="card-media"><img src="https://picsum.photos/seed/tourlamu1/700/560"
+                alt="Dhow sailing off Lamu Island's Old Town"></div>
+            <div class="card-body">
+              <span class="card-meta">3 DAY</span>
+              <h3>Lamu Old Town Cultural Tour</h3>
+              <p class="card-meta">Explore a car-free UNESCO Swahili town by foot and dhow.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$310 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=malindi-marine-park-snorkelling" data-category="beach">
+            <div class="card-media"><img src="assets/images/malindibarrierreef.jpg"
+                alt="Coral reef snorkelling at Malindi Marine Park"></div>
+            <div class="card-body">
+              <span class="card-meta">DAY TRIP</span>
+              <h3>Malindi Marine Park Snorkelling</h3>
+              <p class="card-meta">Snorkel vibrant coral gardens off Kenya's historic coast.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$95 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=watamu-marine-park-snorkelling" data-category="beach">
+            <div class="card-media"><img src="assets/images/malindisnorkelling.jpg"
+                alt="Turquoise lagoon at Watamu Marine Park"></div>
+            <div class="card-body">
+              <span class="card-meta">DAY TRIP</span>
+              <h3>Watamu Marine Park Snorkelling</h3>
+              <p class="card-meta">Explore one of the coast's richest reef ecosystems.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$95 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=lake-nakuru-day-safari" data-category="safari">
+            <div class="card-media"><img src="assets/images/zebrasbylakenakuru.jpg"
+                alt="Flamingos and rhino at Lake Nakuru"></div>
+            <div class="card-body">
+              <span class="card-meta">DAY TRIP</span>
+              <h3>Lake Nakuru Day Safari</h3>
+              <p class="card-meta">Flamingos and a rhino sanctuary in a compact, scenic park.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$180 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=amboseli-day-trip" data-category="safari">
+            <div class="card-media"><img src="assets/images/amboselicanopyforest.jpg"
+                alt="Elephants beneath Kilimanjaro in Amboseli"></div>
+            <div class="card-body">
+              <span class="card-meta">DAY TRIP</span>
+              <h3>Amboseli Day Trip</h3>
+              <p class="card-meta">Elephants and Kilimanjaro views in a single long day.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$220 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=tsavo-amboseli-combo" data-category="safari">
+            <div class="card-media"><img src="assets/images/sunlight.jpg"
+                alt="Red-dusted elephants on the Tsavo plains"></div>
+            <div class="card-body">
+              <span class="card-meta">6 DAY</span>
+              <h3>Tsavo &amp; Amboseli Combo</h3>
+              <p class="card-meta">Red-earth wilderness and Kilimanjaro views in one journey.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$760 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=rift-valley-lakes-tour" data-category="safari">
+            <div class="card-media"><img
+                src="https://images.unsplash.com/photo-1644154364619-40fa665fe024?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmlmdCUyMHZhbGxleXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Flamingos on a Rift Valley soda lake">
+            </div>
+            <div class="card-body">
+              <span class="card-meta">4 DAY</span>
+              <h3>Rift Valley Lakes Tour</h3>
+              <p class="card-meta">Flamingos, rhinos, hippos and geysers along the Rift Valley floor.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$520 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=safari-beach-combo" data-category="beach">
+            <div class="card-media"><img src="https://picsum.photos/seed/toursafaribeach1/700/560"
+                alt="Safari plains and the Kenyan coastline">
+            </div>
+            <div class="card-body">
+              <span class="card-meta">8 DAY</span>
+              <h3>Safari &amp; Beach Combo</h3>
+              <p class="card-meta">Game drives in the Mara, then white sand on the south coast.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$1,150 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=mt-kenya-foothills-trek" data-category="adventure">
+            <div class="card-media"><img src="assets/images/people hiking.jpg"
+                alt="Moorland trail on the lower slopes of Mount Kenya"></div>
+            <div class="card-body">
+              <span class="card-meta">3 DAY</span>
+              <h3>3 Day Foothills Trek</h3>
+              <p class="card-meta">Forest, bamboo and moorland scenery without the summit push.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$410 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=nairobi-park-elephant-orphanage" data-category="safari">
+            <div class="card-media"><img src="https://picsum.photos/seed/tournairobiorph1/700/560"
+                alt="Orphaned elephant calves at a Nairobi sanctuary"></div>
+            <div class="card-body">
+              <span class="card-meta">HALF-DAY</span>
+              <h3>Nairobi Park &amp; Elephant Orphanage</h3>
+              <p class="card-meta">A city-edge game drive plus the Sheldrick elephant orphanage.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$150 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=samburu-maasai-mara-combo" data-category="safari">
+            <div class="card-media"><img src="https://picsum.photos/seed/toursamburumara1/700/560"
+                alt="Grevy's zebra in northern Kenya"></div>
+            <div class="card-body">
+              <span class="card-meta">6 DAY</span>
+              <h3>Samburu &amp; Maasai Mara Combo</h3>
+              <p class="card-meta">Rare northern species and the Mara's Big Five in one trip.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$890 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=naivasha-hells-gate-combo" data-category="adventure">
+            <div class="card-media"><img src="https://picsum.photos/seed/tournaivashahg1/700/560"
+                alt="Cyclists riding through Hell's Gate gorge"></div>
+            <div class="card-body">
+              <span class="card-meta">DAY TRIP</span>
+              <h3>Naivasha &amp; Hell's Gate Combo</h3>
+              <p class="card-meta">A hippo boat safari and a cycle through Hell's Gate gorge.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$210 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=aberdare-mt-kenya-combo" data-category="safari">
+            <div class="card-media"><img src="https://picsum.photos/seed/touraberdaremtk1/700/560"
+                alt="Misty highland forest in the Aberdare Range"></div>
+            <div class="card-body">
+              <span class="card-meta">5 DAY</span>
+              <h3>Aberdare &amp; Mt. Kenya Combo</h3>
+              <p class="card-meta">Highland forests, a tree hotel, and the slopes of Mount Kenya.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$780 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=lamu-dhow-sailing-experience" data-category="culture">
+            <div class="card-media"><img src="https://picsum.photos/seed/tourlamudhow1/700/560"
+                alt="Traditional dhow under sail off Lamu"></div>
+            <div class="card-body">
+              <span class="card-meta">FULL DAY</span>
+              <h3>Lamu Dhow Sailing Experience</h3>
+              <p class="card-meta">Sail the Lamu archipelago aboard a traditional wooden dhow.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$180 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="tour-detail.html?tour=malindi-watamu-coastal-escape" data-category="beach">
+            <div class="card-media"><img src="https://picsum.photos/seed/tourmalindiwatamu1/700/560"
+                alt="Turquoise lagoon on Kenya's north coast"></div>
+            <div class="card-body">
+              <span class="card-meta">4 DAY</span>
+              <h3>Malindi &amp; Watamu Coastal Escape</h3>
+              <p class="card-meta">Two marine parks, historic ruins and turquoise lagoons.</p>
+              <div class="card-foot">
+                <span class="card-price">FROM<strong>$420 / person</strong></span>
+                <span class="card-link">View Tour →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="text-center" style="margin-top:36px;">
+          <p style="font-size:0.9rem; color:var(--ink-500); margin-bottom:16px;">Looking for something different? We can
+            design a custom itinerary just for you.</p>
+          <a href="quote.html" class="btn btn-clay">Get a Custom Quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

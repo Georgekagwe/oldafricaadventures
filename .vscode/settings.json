@@ -1,0 +1,12 @@
+{
+  "liveServer.settings.root": "/",
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.CustomBrowser": null,
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "[html]": { "editor.defaultFormatter": "vscode.html-language-features" },
+  "[css]": { "editor.defaultFormatter": "vscode.css-language-features" },
+  "[javascript]": { "editor.defaultFormatter": "vscode.typescript-language-features" }
+}
