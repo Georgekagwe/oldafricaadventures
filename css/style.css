@@ -823,6 +823,14 @@ section {
   color: rgba(241, 239, 228, 0.5);
 }
 
+.footer-bottom a {
+  color: rgba(241, 239, 228, 0.68);
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+
 /* ---------- Forms ---------- */
 .form-field {
   margin-bottom: 16px;

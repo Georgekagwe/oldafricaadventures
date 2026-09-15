@@ -79,6 +79,7 @@ function renderFooter() {
     </div>
     <div class="footer-bottom">
       <span>© ${new Date().getFullYear()} Old Africa Adventures. All rights reserved.</span>
+      <span><a href="privacy-policy.html">Privacy Policy</a></span>
       <span>Nairobi, Kenya</span>
     </div>
   </div>`;
