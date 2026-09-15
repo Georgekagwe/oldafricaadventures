@@ -89,31 +89,35 @@ function renderDestinationDetail() {
       `${data.bestTime} See our <a href="blog-article.html?post=best-time-to-visit-kenya" style="color:var(--green-900); font-weight:600;">full seasonal guide</a> for more detail.`;
   }
 
-  // --- Photography: bento (rich) or simple 3-photo grid (fallback) ---
+  // --- Photography: bento (rich) or simple photo grid (fallback) — hidden
+  // entirely when a destination has no real photos, rather than padding it
+  // out with random stock placeholders. ---
   const bentoEl = document.getElementById('destPhotoBento');
   const galleryEl = document.getElementById('destGallery');
   const hasBento = data.photography && (data.photography.big || (data.photography.small && data.photography.small.length));
+  const hasGalleryPhotos = data.gallery && data.gallery.length;
   if (hasBento) {
-    const big = data.photography.big || `https://picsum.photos/seed/${data.seed}big/900/900`;
-    const small = [0, 1].map(i => (data.photography.small && data.photography.small[i]) || `https://picsum.photos/seed/${data.seed}small${i}/500/500`);
+    const big = data.photography.big;
+    const small = (data.photography.small || []).filter(Boolean);
     bentoEl.innerHTML = `
       <h3 style="font-size:1.3rem; margin-bottom:16px;">Photography</h3>
       <div style="display:grid; grid-template-columns: 1.4fr 1fr; gap:16px;">
-        <img src="${big}" alt="${data.name} — featured photo" style="width:100%; height:100%; min-height:280px; object-fit:cover; border-radius:8px;">
+        ${big ? `<img src="${big}" alt="${data.name} — featured photo" style="width:100%; height:100%; min-height:280px; object-fit:cover; border-radius:8px;">` : ''}
         <div style="display:grid; grid-template-rows: 1fr 1fr; gap:16px;">
-          <img src="${small[0]}" alt="${data.name} — photo 2" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-          <img src="${small[1]}" alt="${data.name} — photo 3" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+          ${small.map((src, i) => `<img src="${src}" alt="${data.name} — photo ${i + 2}" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">`).join('')}
         </div>
       </div>
     `;
     galleryEl.style.display = 'none';
-  } else {
+  } else if (hasGalleryPhotos) {
     bentoEl.innerHTML = '';
     galleryEl.style.display = '';
-    galleryEl.innerHTML = [1, 2, 3].map(n => {
-      const src = (data.gallery && data.gallery[n - 1]) || `https://picsum.photos/seed/${data.seed}g${n}/400/400`;
-      return `<img src="${src}" alt="${data.name} photo ${n}" style="border-radius:8px; aspect-ratio:1; object-fit:cover;">`;
-    }).join('');
+    galleryEl.innerHTML = data.gallery.map((src, n) =>
+      `<img src="${src}" alt="${data.name} photo ${n + 1}" style="border-radius:8px; aspect-ratio:1; object-fit:cover;">`
+    ).join('');
+  } else {
+    bentoEl.innerHTML = '';
+    galleryEl.style.display = 'none';
   }
 
   // --- Tours panel ---

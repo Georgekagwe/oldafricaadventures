@@ -9,11 +9,7 @@ const OAA_DESTINATIONS = {
         name: "Maasai Mara",
         seed: "maasaimara",
         image: "assets/images/lion watching camera.jpg",
-        gallery: [
-            "https://imgs.search.brave.com/X8uMTVz1kjUreYGGF8pzYjsO1xVaiC5SR8frtLk5nWo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c2lsdmVyYmFja2dv/cmlsbGF0b3Vycy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMDkvbWFhc2Fp/LW1hcmEta2VueWEu/anBn",
-            "https://imgs.search.brave.com/b1loXEDuLJwPQ7cL7AVz8_iqxaLNCNwKkTCyw5WRYuI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS50YWNkbi5jb20v/bWVkaWEvYXR0cmFj/dGlvbnMtc3BsaWNl/LXNwcC0zNjB4MjQw/L3IvMzIvODkvMDUv/NDAvY2FwdGlvbi5q/cGc",
-            "https://imgs.search.brave.com/UV4rB83suVq952BTuqbJWsFiL3IrGauWdTxy--hsouc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jZG4udHJpcGFk/dmlzb3IuY29tL21l/ZGlhL3Bob3RvLW8v/MGMvYmUvNjgvYjMv/cGhvdG8wanBnLmpw/Zw"
-        ],
+        gallery: [],
 
         // --- Rich content (optional — used if present, page falls back to the
         // simpler fields below when a destination doesn't have these yet) ---
@@ -109,8 +105,34 @@ const OAA_DESTINATIONS = {
     "tsavo": {
         name: "Tsavo",
         seed: "tsavo",
-        image: "",
+        image: "assets/images/tsavoelephantwatch.jpg",
         gallery: [],
+
+        eyebrowTag: "Kenya · Red Elephants · Vast Wilderness · Big Five",
+        heroTitle: "Kenya's Largest, Wildest Frontier",
+        heroSubtitle: "Red-dusted elephants, ancient lava flows and a wilderness so vast it swallows the horizon — this is safari at its rawest.",
+        aboutHeading: "Welcome to Kenya's Untamed Giant",
+
+        moments: [
+            { emoji: "🐘", title: "Red Elephants", text: "Watch herds dust-bathe in Tsavo's red volcanic soil, giving them their famous rust-coloured hide." },
+            { emoji: "💧", title: "Mzima Springs", text: "Peer through an underwater viewing chamber at hippos and fish in crystal-clear spring water." },
+            { emoji: "🌋", title: "Volcanic Landscapes", text: "Explore the Shetani lava flows and Chaimu Crater, remnants of relatively recent volcanic activity." },
+            { emoji: "🦏", title: "Ngulia Rhino Sanctuary", text: "Visit a fenced sanctuary protecting one of Kenya's key black rhino populations." },
+            { emoji: "🏞️", title: "Yatta Plateau", text: "See the world's longest lava flow, a striking ridge running for over 290km above the Athi River." }
+        ],
+
+        seasons: [
+            { range: "JUNE — OCTOBER", title: "Dry Season", text: "Wildlife concentrates near the Galana River and Mzima Springs, making this the easiest and most rewarding time to visit.", bestFor: ["Wildlife viewing", "Red elephants", "First-time safari"] },
+            { range: "JANUARY — FEBRUARY", title: "Short Dry Spell", text: "Warm, clear days between the rains with good visibility and fewer visitors than the July peak.", bestFor: ["Photography", "Fewer crowds"] },
+            { range: "MARCH — MAY", title: "Long Rains", text: "Lush scenery and migratory birds arrive, though some park roads become harder to access.", bestFor: ["Birdwatching", "Green landscapes", "Value travel"] },
+            { range: "NOVEMBER — DECEMBER", title: "Short Rains", text: "Fresh vegetation and quieter parks as the landscape greens up again after the dry season.", bestFor: ["Green season", "Quiet safaris"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "Raw beauty, vast wilderness — Kenya's largest protected wildlife area.",
         about: [
             "Split into Tsavo East and Tsavo West, this is Kenya's largest national park — a rugged, sun-baked wilderness of red-earth plains, ancient lava flows and the free-flowing Galana River. It's famous for its red-dusted \u201cred elephants\u201d and some of the country's most dramatic, untouched scenery.",
@@ -133,6 +155,30 @@ const OAA_DESTINATIONS = {
         seed: "lakenakuru",
         image: "",
         gallery: [],
+
+        eyebrowTag: "Kenya · Flamingos · Rhino Sanctuary · Rift Valley",
+        heroTitle: "A Rift Valley Jewel of Pink and Green",
+        heroSubtitle: "A shimmering soda lake, a fortress for black and white rhino, and some of Kenya's most rewarding short safaris.",
+        aboutHeading: "Welcome to Kenya's Compact Wildlife Haven",
+
+        moments: [
+            { emoji: "🦩", title: "Flamingo Flocks", text: "See lesser and greater flamingos gather along the shore, in numbers that shift with the lake's water levels." },
+            { emoji: "🦏", title: "Rhino Sanctuary", text: "Visit one of Kenya's most reliable places to see both black and white rhino, protected inside a predator-proof fence." },
+            { emoji: "🦒", title: "Rothschild's Giraffe", text: "Spot this endangered giraffe subspecies, introduced to the park as part of a conservation programme." },
+            { emoji: "🌄", title: "Baboon Cliff", text: "Take in a sweeping panoramic view over the lake and the surrounding Rift Valley escarpment." },
+            { emoji: "🐆", title: "Elusive Leopards", text: "Patient visitors stand a genuine chance of a leopard sighting in the park's acacia woodland." }
+        ],
+
+        seasons: [
+            { range: "JUNE — OCTOBER, JANUARY — FEBRUARY", title: "Dry Season", text: "Clearer roads and easier wildlife viewing around the lakeshore and woodland trails.", bestFor: ["Rhino tracking", "Wildlife viewing", "Day trips"] },
+            { range: "MARCH — MAY, NOVEMBER — DECEMBER", title: "Rainy Season", text: "Lush greenery, migratory birds and softer light, ideal for photography.", bestFor: ["Birdwatching", "Photography", "Fewer crowds"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "Flamingos and a rhino sanctuary within a compact, scenic park.",
         about: [
             "Lake Nakuru National Park surrounds a shallow soda lake famous for the flocks of flamingos that gather along its shores. Fenced for protection, the park is also one of Kenya's most reliable places to see both black and white rhino.",
@@ -155,6 +201,31 @@ const OAA_DESTINATIONS = {
         seed: "dianibeach",
         image: "",
         gallery: [],
+
+        eyebrowTag: "Kenya · Indian Ocean · Coral Reef · South Coast",
+        heroTitle: "Kenya's Postcard Coastline",
+        heroSubtitle: "Powder-white sand, warm turquoise water and a coral reef just offshore — the perfect place to unwind after the dust of a safari.",
+        aboutHeading: "Welcome to Kenya's South Coast",
+
+        moments: [
+            { emoji: "🏖️", title: "Award-Winning Beach", text: "Diani has repeatedly been named Africa's leading beach destination at the World Travel Awards." },
+            { emoji: "🤿", title: "Coral Reef Snorkelling", text: "Explore a vibrant reef just offshore, part of the protected Diani-Chale Marine Reserve." },
+            { emoji: "🐒", title: "Colobus Monkeys", text: "Spot the endangered Angolan colobus swinging through the beachside forest canopy." },
+            { emoji: "⛵", title: "Wasini Island Dhow Trips", text: "Sail to Wasini Island for dolphin watching and a fresh seafood lunch aboard a traditional dhow." },
+            { emoji: "🦌", title: "Shimba Hills Day Trip", text: "Visit the nearby reserve, one of the few places in Kenya to see the rare sable antelope." }
+        ],
+
+        seasons: [
+            { range: "DECEMBER — MARCH", title: "Hot & Dry", text: "Warm, sunny days and calm seas make this the busiest and most popular beach season.", bestFor: ["Beach holidays", "Snorkelling", "Honeymoons"] },
+            { range: "JULY — OCTOBER", title: "Cool & Dry", text: "Pleasant temperatures with the Kusi trade winds, good conditions for kitesurfing.", bestFor: ["Kitesurfing", "Diving", "Safari & beach combos"] },
+            { range: "APRIL — JUNE", title: "Long Rains", text: "Quieter beaches and the lowest rates of the year, though some rain should be expected.", bestFor: ["Value travel", "Fewer crowds"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "White sands and turquoise waters on Kenya's south coast.",
         about: [
             "Diani Beach is Kenya's best-known stretch of coastline — kilometres of powder-white sand, warm Indian Ocean waters, and a coral reef just offshore that's ideal for snorkelling and diving.",
@@ -177,6 +248,31 @@ const OAA_DESTINATIONS = {
         seed: "mtkenya",
         image: "",
         gallery: [],
+
+        eyebrowTag: "Kenya · Trekking · Alpine Peaks · UNESCO Site",
+        heroTitle: "Africa's Quieter Giant",
+        heroSubtitle: "Glacial peaks, five vegetation zones and a summit trek that needs no ropes — Mount Kenya rewards those who look past Kilimanjaro.",
+        aboutHeading: "Welcome to Kirinyaga, the Mountain of Brightness",
+
+        moments: [
+            { emoji: "🏔️", title: "Point Lenana Summit", text: "Reach 4,985m on a trek that requires no technical climbing, just fitness and acclimatisation." },
+            { emoji: "🌲", title: "Five Vegetation Zones", text: "Walk from montane forest through bamboo and moorland to bare alpine rock in just a few days." },
+            { emoji: "🧊", title: "Equatorial Glaciers", text: "See the last remaining ice fields on the equator, though they are shrinking rapidly with climate change." },
+            { emoji: "🐒", title: "Forest Wildlife", text: "Elephant, buffalo and colobus monkeys roam the mountain's lower forested slopes." },
+            { emoji: "🛖", title: "Sacred Kirinyaga", text: "Learn why the mountain is revered by the Kikuyu, Meru and Embu peoples as a sacred, life-giving presence." }
+        ],
+
+        seasons: [
+            { range: "JANUARY — FEBRUARY, AUGUST — SEPTEMBER", title: "Dry Season", text: "The clearest skies and firmest trails, the best window for summit attempts.", bestFor: ["Summit treks", "Photography", "Clear views"] },
+            { range: "JUNE — JULY", title: "Cool Dry Spell", text: "Crisp mornings and good visibility, slightly quieter than the peak trekking months.", bestFor: ["Fewer crowds", "Trekking"] },
+            { range: "MARCH — MAY, OCTOBER — DECEMBER", title: "Rainy Season", text: "Trails can be muddy and slippery, with limited visibility higher up the mountain.", bestFor: ["Lower-altitude forest walks"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "Adventure and alpine beauty on Africa's second-highest peak.",
         about: [
             "Mount Kenya rises to 5,199m and offers some of East Africa's best high-altitude trekking, without the crowds of Kilimanjaro. Its slopes move through montane forest, bamboo, moorland and dramatic glacial peaks in just a few days' walk.",
@@ -199,6 +295,30 @@ const OAA_DESTINATIONS = {
         seed: "nairobinp",
         image: "assets/images/girrafeacrossnairobinationalpark.jpg",
         gallery: [],
+
+        eyebrowTag: "Kenya · Nairobi · Rhino Sanctuary · City Safari",
+        heroTitle: "Safari Without Leaving the City",
+        heroSubtitle: "Lions, rhino and giraffe grazing with Nairobi's skyline on the horizon — the only national park in the world bordering a capital city.",
+        aboutHeading: "Welcome to the World's Only Capital-City Safari",
+
+        moments: [
+            { emoji: "🦁", title: "Lions With a Skyline", text: "Spot big cats with Nairobi's skyscrapers rising in the background, a view found nowhere else on Earth." },
+            { emoji: "🦏", title: "Black Rhino Sanctuary", text: "See one of Kenya's highest-density black rhino populations, protected within the park's boundaries." },
+            { emoji: "🐘", title: "Sheldrick Elephant Orphanage", text: "Visit the world-famous elephant and rhino nursery run by the Sheldrick Wildlife Trust at the park's edge." },
+            { emoji: "🚗", title: "Half-Day Safari", text: "Game-drive before breakfast and be back in the city centre by lunch — safari on a tight schedule." },
+            { emoji: "🦓", title: "Athi-Kapiti Plains Migration", text: "Wildebeest and zebra move through the park's unfenced southern boundary during the dry season." }
+        ],
+
+        seasons: [
+            { range: "JUNE — OCTOBER", title: "Dry Season", text: "Short grass makes wildlife easy to spot, and migratory wildebeest move through from the Kapiti plains.", bestFor: ["Wildlife viewing", "Photography"] },
+            { range: "YEAR-ROUND", title: "Easy Access", text: "As a half-day trip from the city, the park is worthwhile in any season, with a different mood in the rains.", bestFor: ["Short stopovers", "Layovers", "Any time of year"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "The only national park bordering a capital city — wildlife with a skyline backdrop.",
         about: [
             "Just minutes from downtown Nairobi, this compact park offers the surreal experience of spotting lions, giraffes and rhinos with the city's skyscrapers rising in the distance.",
@@ -221,6 +341,30 @@ const OAA_DESTINATIONS = {
         seed: "samburu",
         image: "assets/images/impalasinsamburureserve.jpg",
         gallery: [],
+
+        eyebrowTag: "Kenya · Special Five · Ewaso Nyiro · Northern Frontier",
+        heroTitle: "Kenya's Wild Northern Frontier",
+        heroSubtitle: "Rugged, sun-baked landscapes along the Ewaso Nyiro River, home to species found almost nowhere else in Kenya.",
+        aboutHeading: "Welcome to the Land North of the Equator",
+
+        moments: [
+            { emoji: "🦓", title: "The Samburu Special Five", text: "Grevy's zebra, reticulated giraffe, gerenuk, Beisa oryx and Somali ostrich, found almost nowhere else in Kenya." },
+            { emoji: "🐘", title: "Elephant Research Hub", text: "Home to Save the Elephants, a pioneering elephant research organisation founded here in the 1990s." },
+            { emoji: "🌊", title: "Ewaso Nyiro Riverside", text: "Game drives along the river draw wildlife from the surrounding dry country, especially in the dry season." },
+            { emoji: "🛖", title: "Samburu Culture", text: "Visit villages of the Samburu people, close cultural cousins of the Maasai, and learn their traditions." },
+            { emoji: "🦁", title: "Big Cats in Dry Country", text: "Lions, leopards and cheetah are all regularly seen despite the arid, semi-desert landscape." }
+        ],
+
+        seasons: [
+            { range: "JUNE — OCTOBER, JANUARY — FEBRUARY", title: "Dry Season", text: "Wildlife concentrates along the Ewaso Nyiro River, the easiest and most rewarding time to visit.", bestFor: ["Wildlife viewing", "Riverside game drives", "First-time safari"] },
+            { range: "MARCH — MAY, NOVEMBER — DECEMBER", title: "Rainy Season", text: "A greener, quieter reserve with fewer vehicles, though some roads can be affected by rain.", bestFor: ["Fewer crowds", "Birdwatching"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "Rugged northern Kenya, home to species found nowhere else in the country.",
         about: [
             "North of the equator, Samburu's semi-arid landscape and the Ewaso Nyiro River support a distinct set of wildlife found in few other Kenyan parks — the so-called 'Samburu Special Five'.",
@@ -243,6 +387,30 @@ const OAA_DESTINATIONS = {
         seed: "lakebogoria",
         image: "assets/images/birdfrlyingoverlakebogoria.jpg",
         gallery: [],
+
+        eyebrowTag: "Kenya · Hot Springs · Flamingos · Rift Valley",
+        heroTitle: "Where the Rift Valley Boils Over",
+        heroSubtitle: "Steaming geysers, cliff-lined shores and vast flocks of flamingos on one of Kenya's most dramatic soda lakes.",
+        aboutHeading: "Welcome to Kenya's Geothermal Wonder",
+
+        moments: [
+            { emoji: "♨️", title: "Boiling Hot Springs", text: "Geysers erupt along the lakeshore, some jetting several metres into the air." },
+            { emoji: "🦩", title: "Lesser Flamingo Flocks", text: "One of the largest concentrations of lesser flamingos anywhere in the Rift Valley." },
+            { emoji: "🏞️", title: "Siracho Escarpment", text: "Dramatic cliffs frame the lake along its eastern edge, backdropping every photo." },
+            { emoji: "🦌", title: "Greater Kudu", text: "A rare and striking antelope sighting for visitors who explore beyond the shoreline." },
+            { emoji: "🌍", title: "UNESCO World Heritage Status", text: "Part of the Kenya Lake System, recognised for its outstanding ecological importance." }
+        ],
+
+        seasons: [
+            { range: "YEAR-ROUND", title: "Flamingo Viewing", text: "Flamingo numbers shift between Bogoria, Nakuru and Elementaita depending on lake conditions, with July–October often strongest here.", bestFor: ["Flamingos", "Photography", "Day trips"] },
+            { range: "JUNE — OCTOBER, JANUARY — FEBRUARY", title: "Dry Season", text: "The easiest road access to the reserve and the clearest views of the hot springs.", bestFor: ["Hot springs", "Easy access", "Fewer crowds"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "Steaming hot springs and one of Kenya's largest flamingo populations.",
         about: [
             "Lake Bogoria is a dramatic Rift Valley soda lake ringed by cliffs, best known for its geysers, hot springs, and the huge flocks of lesser flamingos that gather along its shores.",
@@ -265,6 +433,30 @@ const OAA_DESTINATIONS = {
         seed: "lakenaivasha",
         image: "",
         gallery: [],
+
+        eyebrowTag: "Kenya · Hippos · Boat Safaris · Rift Valley",
+        heroTitle: "A Freshwater Escape in the Rift Valley",
+        heroSubtitle: "Hippo-filled waters, a predator-free island you can walk across, and one of Kenya's easiest weekend escapes from Nairobi.",
+        aboutHeading: "Welcome to Kenya's Freshwater Rift Lake",
+
+        moments: [
+            { emoji: "🚤", title: "Hippo Boat Safaris", text: "Glide past resting pods of hippos and fish eagles diving for prey along the shoreline." },
+            { emoji: "🦒", title: "Crescent Island Walk", text: "Stroll freely among giraffe, zebra and waterbuck on this predator-free peninsula." },
+            { emoji: "🌹", title: "Flower Farm Country", text: "The lake's fertile shores support one of the world's largest rose-export industries." },
+            { emoji: "🏡", title: "Elsamere", text: "Visit Joy Adamson's former home, now a conservation centre and museum on the lakeshore." },
+            { emoji: "🌋", title: "Mount Longonot Nearby", text: "An easy add-on hike around the rim of a dormant volcanic crater close to the lake." }
+        ],
+
+        seasons: [
+            { range: "JUNE — OCTOBER, JANUARY — FEBRUARY", title: "Dry Season", text: "Calm water for boat safaris and clear views across to the escarpment.", bestFor: ["Boat safaris", "Photography", "Weekend trips"] },
+            { range: "MARCH — MAY, NOVEMBER — DECEMBER", title: "Rainy Season", text: "Greener scenery and quieter trails, though water levels can affect the shoreline.", bestFor: ["Birdwatching", "Fewer crowds"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "A freshwater lake ringed by wildlife, flower farms and boat safaris.",
         about: [
             "Just under two hours from Nairobi, Lake Naivasha is a freshwater Rift Valley lake known for boat safaris among pods of hippos, walking safaris in nearby Hell's Gate, and its vibrant birdlife.",
@@ -287,6 +479,30 @@ const OAA_DESTINATIONS = {
         seed: "hellsgate",
         image: "https://imgs.search.brave.com/oCNYjXZEvSf0mGuvxtubvLmuNcsScdNGk8gW7BlV8tY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c2hhZG93c29mYWZy/aWNhLmNvbS9tZWRp/YS9jYXRhbG9nL3By/b2R1Y3QvY2FjaGUv/MS9pbWFnZS85MDB4/LzA0MGVjMDliMWUz/NWRmMTM5NDMzODg3/YTk3ZGFhNjZmL2gv/ZS9oZWxsX3NfZ2F0/ZV9rZW55YV8xLmpw/Zw",
         gallery: [],
+
+        eyebrowTag: "Kenya · Cycling · Gorge Hiking · Rift Valley",
+        heroTitle: "The Park You Explore on Foot",
+        heroSubtitle: "Towering red cliffs, a narrow gorge and one of the few places in Kenya where you can walk or cycle freely among wildlife.",
+        aboutHeading: "Welcome to Hell's Gate",
+
+        moments: [
+            { emoji: "🚴", title: "Cycle or Walk Among Wildlife", text: "One of the only Kenyan parks where you can explore on foot or by bike without a vehicle." },
+            { emoji: "🧗", title: "Fischer's Tower", text: "A volcanic plug popular with rock climbers, rising dramatically from the valley floor." },
+            { emoji: "🏜️", title: "Hell's Gate Gorge", text: "A narrow, red-walled gorge explored on foot with a local guide, best before the rains." },
+            { emoji: "⚡", title: "Olkaria Geothermal Plant", text: "See Africa's largest geothermal power station, harnessing the valley's volcanic heat." },
+            { emoji: "🎬", title: "The Lion King Inspiration", text: "The park's cliffs and volcanic plugs reportedly inspired Disney's animators." }
+        ],
+
+        seasons: [
+            { range: "JUNE — OCTOBER, JANUARY — FEBRUARY", title: "Dry Season", text: "Firm trails for cycling and hiking, with the clearest conditions in the gorge.", bestFor: ["Cycling", "Gorge hiking", "Rock climbing"] },
+            { range: "MARCH — MAY, NOVEMBER — DECEMBER", title: "Rainy Season", text: "The gorge can flood quickly and become unsafe to enter during and after rain.", bestFor: ["Wildlife drives", "Fewer crowds"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "Dramatic cliffs and gorges — one of the only parks you can explore on foot or by bike.",
         about: [
             "Named for the narrow, steep-walled gorge that early explorers thought resembled the entrance to hell, this park is famous for letting visitors walk or cycle freely among zebra, giraffe and buffalo — no vehicle required.",
@@ -309,6 +525,30 @@ const OAA_DESTINATIONS = {
         seed: "aberdare",
         image: "https://imgs.search.brave.com/KJNhg4wiMfr6z6Itb9-JDMgeDSBng7JXsXkB-zzU2FA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/a2VueWF0b3VyaXNt/LmluL2ltYWdlcy9h/YmVyZGFyZS1uYXRp/b25hbC1wYXJrLmpw/Zw",
         gallery: [],
+
+        eyebrowTag: "Kenya · Tree Hotels · Waterfalls · Highland Forest",
+        heroTitle: "Highland Mists and Legendary Tree Hotels",
+        heroSubtitle: "Cascading waterfalls, floodlit waterholes and the tree hotel where a princess became a queen overnight.",
+        aboutHeading: "Welcome to Kenya's Misty Highlands",
+
+        moments: [
+            { emoji: "🌳", title: "Treetops & The Ark", text: "The famous \"tree hotels\" where Princess Elizabeth was staying in 1952 when she learned she had become Queen." },
+            { emoji: "💦", title: "Karuru Falls", text: "A dramatic three-tiered waterfall and one of Kenya's tallest, hidden deep in the forest." },
+            { emoji: "🌙", title: "Floodlit Waterholes", text: "Watch elephant, buffalo and even leopard drink through the night from a lodge balcony." },
+            { emoji: "🐆", title: "Rare Bongo & Leopard", text: "Among the last strongholds for the critically endangered bongo antelope, with rare leopard sightings too." },
+            { emoji: "🌲", title: "Highland Rainforest & Moorland", text: "Bamboo forest gives way to open moorland above 3,000m, a striking change in scenery." }
+        ],
+
+        seasons: [
+            { range: "JANUARY — FEBRUARY, JUNE — SEPTEMBER", title: "Dry Season", text: "The clearest highland weather and the easiest driving on forest roads.", bestFor: ["Tree hotel stays", "Waterfall hikes", "Photography"] },
+            { range: "MARCH — MAY, OCTOBER — DECEMBER", title: "Rainy Season", text: "Mist and rain are common, though the waterfalls are at their most dramatic and full.", bestFor: ["Waterfalls at full flow", "Fewer crowds"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "Misty highland forests, waterfalls, and Kenya's famous tree hotels.",
         about: [
             "The Aberdare Range is a dramatic highland wilderness of moorland, bamboo forest and cascading waterfalls, sitting above 3,000m in central Kenya.",
@@ -331,6 +571,30 @@ const OAA_DESTINATIONS = {
         seed: "lamuisland",
         image: "https://imgs.search.brave.com/tYMauoHIl0oB7G5Y-HfFUvDtO9Epqr-wQ6QVc1HiSyc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTky/NjMyMTQ1L3Bob3Rv/L3dhdGVyZnJvbnQt/YXQtbGFtdS1pc2xh/bmQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPTdHQ2xNTHBG/dHlPOUl5eVNpdUE0/am1SUG9SaUl6dU53/VG1MTnAyWE9OOGc9",
         gallery: [],
+
+        eyebrowTag: "Kenya · UNESCO Old Town · Swahili Culture · Coast",
+        heroTitle: "An Island Where Time Slows Down",
+        heroSubtitle: "Car-free streets, carved wooden doors and centuries of Swahili history — Lamu is unlike anywhere else on the Kenyan coast.",
+        aboutHeading: "Welcome to Kenya's Swahili Time Capsule",
+
+        moments: [
+            { emoji: "🏛️", title: "UNESCO Old Town", text: "The oldest continuously inhabited Swahili settlement in East Africa, dating back to the 12th century." },
+            { emoji: "🐴", title: "Donkeys Over Engines", text: "With almost no cars allowed on the island, donkeys remain the main form of everyday transport." },
+            { emoji: "⛵", title: "Dhow Sailing", text: "Traditional hand-built wooden dhows still ply the channel, especially beautiful at sunset." },
+            { emoji: "🕌", title: "Maulidi Festival", text: "One of East Africa's largest Swahili cultural and religious festivals, held here annually." },
+            { emoji: "🏖️", title: "Shela Beach", text: "A long, dune-backed beach just a short walk or boat ride from the Old Town." }
+        ],
+
+        seasons: [
+            { range: "JULY — OCTOBER, DECEMBER — MARCH", title: "Dry Season", text: "The most reliable weather for exploring the Old Town on foot and sailing the channel.", bestFor: ["Cultural tours", "Dhow sailing", "Beach time"] },
+            { range: "APRIL — JUNE", title: "Long Rains", text: "Quieter streets and cooler days, with the best accommodation rates of the year.", bestFor: ["Value travel", "Fewer crowds"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "A UNESCO World Heritage Swahili town where cars are banned and donkeys rule the streets.",
         about: [
             "Lamu Old Town is the oldest and best-preserved Swahili settlement in East Africa, a maze of narrow streets, carved wooden doors and coral-stone buildings dating back centuries.",
@@ -353,6 +617,30 @@ const OAA_DESTINATIONS = {
         seed: "malindi",
         image: "https://imgs.search.brave.com/QhO-fmqOfKbtqURZhcN5H5gJjlwjKsaF3FKtaSVUmS8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9raXJp/d2V0cmF2ZWwuY28u/dHovd3AtY29udGVu/dC91cGxvYWRzLzIw/MjUvMDkvTWFsaW5k/aS1NYXJpbmUtTmF0/aW9uYWwtUGFyay5q/cGc",
         gallery: [],
+
+        eyebrowTag: "Kenya · Marine Park · Swahili History · Coast",
+        heroTitle: "Five Centuries of Coastal History",
+        heroSubtitle: "Coral gardens, a 500-year-old Portuguese landmark and ruins swallowed by the forest — Malindi layers history onto a classic beach escape.",
+        aboutHeading: "Welcome to Kenya's Historic Coastal Town",
+
+        moments: [
+            { emoji: "⚓", title: "Vasco da Gama Pillar", text: "A coral pillar cross marking the Portuguese explorer's landing here in 1498, still standing over 500 years later." },
+            { emoji: "🐠", title: "Malindi Marine National Park", text: "Kenya's first marine national park, gazetted in 1968, protecting vibrant offshore coral gardens." },
+            { emoji: "🏛️", title: "Gede Ruins", text: "Explore the atmospheric remains of a 13th-century Swahili-Arab town, slowly reclaimed by forest." },
+            { emoji: "🎣", title: "Deep-Sea Fishing", text: "One of East Africa's top spots for marlin and sailfish, drawing anglers year-round." },
+            { emoji: "🇮🇹", title: "Italian Coastal Influence", text: "A long-standing Italian community has shaped the town's cafes, villas and restaurants." }
+        ],
+
+        seasons: [
+            { range: "DECEMBER — MARCH, JULY — OCTOBER", title: "Dry Season", text: "Calm seas and the best underwater visibility for snorkelling and diving.", bestFor: ["Snorkelling", "Deep-sea fishing", "Beach holidays"] },
+            { range: "APRIL — JUNE", title: "Long Rains", text: "Quieter streets and lower prices, though the sea can be rougher for water sports.", bestFor: ["Value travel", "Fewer crowds"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "Historic coastal town with coral reefs, Italian influence, and a laid-back marine park.",
         about: [
             "Malindi blends centuries of Swahili, Arab, Portuguese and Italian history with a relaxed beach-town atmosphere and some of Kenya's best snorkelling and diving.",
@@ -375,6 +663,30 @@ const OAA_DESTINATIONS = {
         seed: "watamu",
         image: "https://imgs.search.brave.com/Z2svLZh-aXeaP_QpWBw1WX6C1Me-o-XgMv7Ig7rjVlI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/d2lsZGxpZmVrZW55/YXNhZmFyaS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjIv/MDkvcFdsUjJNSDln/d3ZYMElmMHM2V0JD/TjBRYkdGY0t1aVBU/UnRCNDdmUC5qcGc",
         gallery: [],
+
+        eyebrowTag: "Kenya · Marine Park · Sea Turtles · Coastal Forest",
+        heroTitle: "Kenya's Quietest Corner of Coast",
+        heroSubtitle: "A protected reef, nesting sea turtles and one of East Africa's last great coastal forests, all within a short drive of Malindi.",
+        aboutHeading: "Welcome to Kenya's Marine and Forest Sanctuary",
+
+        moments: [
+            { emoji: "🐢", title: "Sea Turtle Conservation", text: "Local Ocean Conservation protects nesting and injured turtles right here in Watamu." },
+            { emoji: "🐠", title: "Watamu Marine National Park", text: "Some of the richest, most colourful reef diving and snorkelling on the Kenyan coast." },
+            { emoji: "🦉", title: "Arabuko-Sokoke Forest", text: "East Africa's largest remaining coastal forest, home to birds and mammals found nowhere else." },
+            { emoji: "🌿", title: "Mida Creek Boardwalk", text: "Kayak or walk the mangrove boardwalk at sunset among herons, waders and kingfishers." },
+            { emoji: "🏝️", title: "Quiet, Laid-Back Lagoons", text: "Calmer and less developed than nearby Malindi, with a relaxed village atmosphere." }
+        ],
+
+        seasons: [
+            { range: "DECEMBER — MARCH, JULY — OCTOBER", title: "Dry Season", text: "The calmest seas and clearest water for diving, snorkelling and turtle watching.", bestFor: ["Diving", "Snorkelling", "Turtle watching"] },
+            { range: "APRIL — JUNE", title: "Long Rains", text: "Quiet lagoons and low-season rates, with occasional rougher seas.", bestFor: ["Birdwatching", "Value travel"] }
+        ],
+
+        photography: {
+            big: "",
+            small: []
+        },
+
         tagline: "Turquoise lagoons, coral reefs and one of Kenya's top marine parks.",
         about: [
             "Watamu is famed for its powder-white beaches, coral-fringed lagoons, and the Watamu Marine National Park, one of the richest reef ecosystems on the Kenyan coast.",
