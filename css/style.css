@@ -163,13 +163,30 @@ p {
 }
 
 /* ---------- Header / Nav ---------- */
+/* backdrop-filter lives on ::before, not on .site-header itself: a `filter`
+   or `backdrop-filter` on an element makes IT the containing block for any
+   position:fixed descendant, instead of the viewport. .nav-links (the
+   mobile dropdown menu below) is position:fixed, so with backdrop-filter
+   directly on .site-header it was being confined to the header's own
+   ~70px-tall box instead of covering the screen — the menu still opened
+   (the "open" class toggled fine), it was just clipped down to nothing,
+   which is why tapping the icon looked like it did nothing on a real
+   phone. Keeping backdrop-filter on a separate ::before layer gives the
+   same frosted-glass look without .site-header itself acquiring a filter. */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: rgba(251, 249, 244, 0.92);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--line);
 }
 
 .nav {
