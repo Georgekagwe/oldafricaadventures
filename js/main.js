@@ -1,7 +1,12 @@
 /* Old Africa Adventures — form + interaction logic
-   Talks to the small Express backend in /backend (see backend/README.md). */
+   Locally (Live Server): talks to the Express backend in /backend on
+   http://localhost:3000 (see backend/README.md).
+   In production (Vercel): talks to the same-origin /api/* serverless
+   functions, so no separate backend host or CORS setup is needed. */
 
-const OAA_API_BASE = window.OAA_API_BASE || "http://localhost:3000";
+const OAA_API_BASE =
+  window.OAA_API_BASE ||
+  (["localhost", "127.0.0.1"].includes(location.hostname) ? "http://localhost:3000" : "");
 const OAA_WHATSAPP_NUMBER = "254722888937"; // international format, no plus/spaces
 
 function showStatus(el, type, message) {

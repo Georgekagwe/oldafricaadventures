@@ -1,3 +1,7 @@
 
 assets/images/Safari-galery/
 assets/images/Safari-galery.zip
+
+node_modules/
+.env
+.vercel

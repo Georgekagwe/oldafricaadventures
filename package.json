@@ -1,0 +1,10 @@
+{
+  "name": "old-africa-adventures",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static site + Vercel serverless functions (api/) for the Contact and Get-a-Quote forms.",
+  "dependencies": {
+    "nodemailer": "^6.9.14",
+    "twilio": "^5.2.2"
+  }
+}
