@@ -4,6 +4,7 @@ const NAV_LINKS = [
   { href: "index.html", label: "Home" },
   { href: "destinations.html", label: "Destinations" },
   { href: "tours.html", label: "Tours" },
+  { href: "gallery.html", label: "Gallery" },
   { href: "services.html", label: "Services" },
   { href: "about.html", label: "About" },
   { href: "blog.html", label: "Blog" },
@@ -43,7 +44,7 @@ function renderFooter() {
         <div class="footer-social">
           <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></a>
           <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path d="M8.5 8.5c.3 3 2.5 5.2 5.5 5.5.8.1 1.4-.5 1.2-1.3l-.2-.7a.9.9 0 0 0-.9-.6l-1 .1a4.6 4.6 0 0 1-2.6-2.6l.1-1a.9.9 0 0 0-.6-.9l-.7-.2c-.8-.2-1.4.4-1.3 1.2z"/></svg></a>
+          <a href="https://wa.me/254722888937?text=${encodeURIComponent("Hi Old Africa Adventures, I'd like to ask about a safari.")}" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path d="M8.5 8.5c.3 3 2.5 5.2 5.5 5.5.8.1 1.4-.5 1.2-1.3l-.2-.7a.9.9 0 0 0-.9-.6l-1 .1a4.6 4.6 0 0 1-2.6-2.6l.1-1a.9.9 0 0 0-.6-.9l-.7-.2c-.8-.2-1.4.4-1.3 1.2z"/></svg></a>
         </div>
       </div>
       <div class="footer-col">
@@ -51,6 +52,7 @@ function renderFooter() {
         <ul>
           <li><a href="destinations.html">Destinations</a></li>
           <li><a href="tours.html">Tours</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="blog.html">Blog</a></li>

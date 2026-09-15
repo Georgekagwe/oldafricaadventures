@@ -1,8 +1,7 @@
 /* Old Africa Adventures — tour content
    One entry per tour. tour-detail.html reads the "tour" URL parameter
    (e.g. tour-detail.html?tour=tsavo-adventure) and looks up the matching
-   entry here to fill in the page. Add a new tour by adding a new object
-   below — no new HTML file needed.
+   entry here to fill in the page. 
 
    Fields:
    - image: hero photo at the top of the page. Path to a file in assets/images/
@@ -30,9 +29,9 @@ const OAA_TOURS = {
 
         ],
         category: "safari",
-        duration: "3 Days / 2 Nights",
+        duration: "2 Nights,3 days",
         groupSize: "2 – 6 People",
-        price: "$450 / person",
+        price: "$550 / person",
         difficulty: "Easy",
         accommodation: "Tented safari camp",
         bestTime: "July – October for the Great Migration, or January – March for calving season",
@@ -51,14 +50,14 @@ const OAA_TOURS = {
             { title: "Day 2 — Full-Day Safari", text: "Sunrise game drive followed by a full day exploring the reserve, with a picnic lunch on the plains." },
             { title: "Day 3 — Morning Drive & Departure", text: "One last game drive before breakfast and transfer back to Nairobi." }
         ],
-        inclusions: ["Return transport from Nairobi", "2 nights' accommodation", "All meals & bottled water", "All game drives & park fees"],
-        exclusions: ["International flights", "Travel insurance", "Personal expenses & tips"]
+        inclusions: ["Return transport from Nairobi", "2 nights' accommodation", "All meals & bottled water", "All game drives"],
+        exclusions: ["International flights", "Travel insurance", "Personal expenses & tips", "Park fees"]
     },
     "maasai-cultural-tour": {
         name: "Maasai Cultural Tour",
         seed: "tourmaasai1",
-        image: "",
-        overviewImage: "",
+        image: "https://imgs.search.brave.com/cedivS55pvHKir3SKL1UZgOojjd1zgHVRySWDK8p4QY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hamtl/bnlhc2FmYXJpcy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMDUvbWFhc2Fp/LXBlb3BsZS1iZzIt/MTAyNHg3NDQud2Vi/cA",
+        overviewImage: "https://imgs.search.brave.com/rk03vBKh-AAeRvup-IBT2AR_z7eelVsKvpWnV69rRpQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vc21hcnRu/b21hZGtlbnlhLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NS8wNC9tYWFzYWkt/dHJpYmUtZmFjdHMu/anBnP3Jlc2l6ZT01/ODAsMzg3JnNzbD0x",
         gallery: [],
         category: "culture",
         duration: "3 Days / 2 Nights",
@@ -121,7 +120,7 @@ const OAA_TOURS = {
         name: "4 Day Tsavo Adventure",
         seed: "tourtsavo1",
         image: "assets/images/tourcar.jpg",
-        overviewImage: "",
+        overviewImage: "assets/images/lionintsavo.jpg",
         gallery: [],
         category: "safari",
         duration: "4 Days / 3 Nights",
@@ -152,8 +151,8 @@ const OAA_TOURS = {
     "mt-kenya-climb": {
         name: "6 Day Mt. Kenya Climb",
         seed: "tourmtkenya1",
-        image: "",
-        overviewImage: "",
+        image: "https://imgs.search.brave.com/jRLrt-PpXnxEX60xO9BqiKXSmc1pqdth5tUdLrEK1Zk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3LnRy/YXZlbHdpdGhhcGVu/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8xMC9EYXkt/YnktRGF5LU1vdW50/LUtlbnlhLWhpa2lu/Zy1pdGluZXJhcnkt/c2NhbGVkLmpwZz9y/ZXNpemU9MTkyMCwy/NTYwJnNzbD0x",
+        overviewImage: "https://monkeystale.ca/wp-content/uploads/2020/10/crw_1207-22-1.jpg",
         gallery: [],
         category: "adventure",
         duration: "6 Days / 5 Nights",
@@ -219,9 +218,9 @@ const OAA_TOURS = {
         overviewImage: "assets/images/rhinos.jpg",
         gallery: [],
         category: "safari",
-        duration: "Half-Day",
-        groupSize: "1 – 6 People",
-        price: "$120 / person",
+        duration: "Full-Day",
+        groupSize: "6 – 7 People",
+        price: "$165 / person",
         difficulty: "Easy",
         accommodation: "Half-day trip — no accommodation needed",
         bestTime: "June – October for the driest game viewing, though rewarding year-round",
@@ -230,7 +229,6 @@ const OAA_TOURS = {
         overview: "The only national park bordering a capital city anywhere in the world — spot lions, giraffes and black rhino with Nairobi's skyline rising behind the savannah, all in a single half-day outing.",
         highlights: [
             { emoji: "🦁", title: "Wildlife Beside a Skyline", text: "See lion, giraffe and zebra with Nairobi's high-rises visible on the horizon — a scene found nowhere else." },
-            { emoji: "🦏", title: "Black Rhino Sanctuary", text: "The park protects one of Kenya's most important black rhino populations within a fenced sanctuary." },
             { emoji: "🐘", title: "Sheldrick Orphanage Nearby", text: "Combine your drive with a visit to see orphaned elephant calves being hand-raised close to the park gate." },
             { emoji: "⏱️", title: "Fits Any Schedule", text: "A half-day format means you can safari the same day you land or before an evening flight out." }
         ],
@@ -246,12 +244,12 @@ const OAA_TOURS = {
         name: "Samburu Safari",
         seed: "toursamburu1",
         image: "assets/images/zebra and impala drinking water.jpg",
-        overviewImage: "",
+        overviewImage: "assets/images/girrafebysamburureserve.jpg",
         gallery: [],
         category: "safari",
         duration: "3 Days / 2 Nights",
         groupSize: "2 – 6 People",
-        price: "$520 / person",
+        price: "$680 / person",
         difficulty: "Easy",
         accommodation: "Riverside tented camp",
         bestTime: "June – October and January – February for the easiest river-side viewing",
@@ -277,7 +275,7 @@ const OAA_TOURS = {
         name: "Lake Bogoria Day Trip",
         seed: "tourbogoria1",
         image: "assets/images/flamingos by the lake.jpg",
-        overviewImage: "",
+        overviewImage: "assets/images/lakebogoria.jpg",
         gallery: [],
         category: "safari",
         duration: "Day Trip",
@@ -306,8 +304,8 @@ const OAA_TOURS = {
     "lake-naivasha-boat-safari": {
         name: "Lake Naivasha Boat Safari",
         seed: "tournaivasha1",
-        image: "",
-        overviewImage: "",
+        image: "assets/images/boatbythelake.jpg",
+        overviewImage: "assets\images\boatbylake2.jpg",
         gallery: [],
         category: "adventure",
         duration: "Day Trip",
@@ -336,8 +334,8 @@ const OAA_TOURS = {
     "hells-gate-cycling-safari": {
         name: "Hell's Gate Cycling Safari",
         seed: "tourhellsgate1",
-        image: "",
-        overviewImage: "",
+        image: "assets/images/hellgatecycling.jpg",
+        overviewImage: "assets/images/bikebylake.jpg",
         gallery: [],
         category: "adventure",
         duration: "Day Trip",
@@ -367,7 +365,7 @@ const OAA_TOURS = {
         name: "Aberdare Tree Hotel Experience",
         seed: "touraberdare1",
         image: "assets/images/tourcar.jpg",
-        overviewImage: "",
+        overviewImage: "assets/images/giraffebyfigtreeaberdare.jpg",
         gallery: [],
         category: "safari",
         duration: "2 Days / 1 Night",
@@ -396,8 +394,8 @@ const OAA_TOURS = {
     "lamu-old-town-cultural-tour": {
         name: "Lamu Old Town Cultural Tour",
         seed: "tourlamu1",
-        image: "",
-        overviewImage: "",
+        image: "assets/images/lamutown.jpg",
+        overviewImage: "assets/images/lamutown2.jpg",
         gallery: [],
         category: "culture",
         duration: "3 Days / 2 Nights",
@@ -427,8 +425,8 @@ const OAA_TOURS = {
     "malindi-marine-park-snorkelling": {
         name: "Malindi Marine Park Snorkelling",
         seed: "tourmalindi1",
-        image: "",
-        overviewImage: "",
+        image: "https://images.unsplash.com/photo-1627981584479-9605e4e7d1d0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFsaW5kaXxlbnwwfHwwfHx8MA%3D%3D",
+        overviewImage: "https://imgs.search.brave.com/bHmLHjRcniCjY39IveeTqSdGdZI7Pb3-yN96GoLwYZE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kcHU5/ejRyNDZkdHl0LmNs/b3VkZnJvbnQubmV0/L21lZGlhL2ZpbGVy/X3B1YmxpYy8yOS84/MS8yOTgxMmE1NC02/Y2I2LTQ3NDctOTI1/Ny1lN2NmMTYwMDJl/OGQvamVzc2ljYS1w/YW1wLW1pZGZvNzh6/LW9hLXVuc3BsYXNo/LmpwZz93aWR0aD0z/NjgmcXVhbGl0eT04/MCZmb3JtYXQ9YXV0/byZoZWlnaHQ9MzY4",
         gallery: [],
         category: "beach",
         duration: "Day Trip",
@@ -457,8 +455,8 @@ const OAA_TOURS = {
     "watamu-marine-park-snorkelling": {
         name: "Watamu Marine Park Snorkelling",
         seed: "tourwatamu1",
-        image: "",
-        overviewImage: "",
+        image: "https://imgs.search.brave.com/NfGhW0zHaKbbBehOKgTlB_0lECwxuI7FaN6BiLwxJZ8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/eHRyZW1lc3BvdHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDEzLzAxL1dhdGFt/dS1CZWFjaC1NYWxp/bmRpLVNub3JrZWxs/aW5nLmpwZw",
+        overviewImage: "https://imgs.search.brave.com/UPCtGBC9RFCsCZ7x45tx2JRSfJoA-r0LQZnqZ5Eb4TQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jZG4udHJpcGFk/dmlzb3IuY29tL21l/ZGlhL3Bob3RvLW8v/MjUvZWUvOWEvZDQv/Y2FwdGlvbi5qcGc",
         gallery: [],
         category: "beach",
         duration: "Day Trip",
@@ -615,7 +613,7 @@ const OAA_TOURS = {
         name: "Safari & Beach Combo",
         seed: "toursafaribeach1",
         image: "assets/images/tourcar.jpg",
-        overviewImage: "",
+        overviewImage: "assets/images/kenyancoast.jpg",
         gallery: [],
         category: "beach",
         duration: "8 Days / 7 Nights",
@@ -647,8 +645,8 @@ const OAA_TOURS = {
     "mt-kenya-foothills-trek": {
         name: "3 Day Foothills Trek",
         seed: "tourmtkenyafoot1",
-        image: "",
-        overviewImage: "",
+        image: "https://imgs.search.brave.com/5WpA8mQ2FpZnjR95CU0pvhlxlB3moPOlamS4SjZabeI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTUx/NDIyNjgxL3Bob3Rv/L3RyZWVzLWluLW9s/ZC1mb3Jlc3QuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPXdB/aUY3M0VyMEdwNHc3/UW1mM3Z6d0xlRXJN/MV9ET3BqTFlVQll2/ZlA5MTg9",
+        overviewImage: "https://media.istockphoto.com/id/1249201126/photo/corn-and-trees-kenya.jpg?s=612x612&w=0&k=20&c=M0yZVVJKEUNJ2dRnPoBZ2RHS4x_ieFBLUupIpFBpBdQ=",
         gallery: [],
         category: "adventure",
         duration: "3 Days / 2 Nights",
@@ -741,8 +739,8 @@ const OAA_TOURS = {
     "naivasha-hells-gate-combo": {
         name: "Naivasha & Hell's Gate Combo",
         seed: "tournaivashahg1",
-        image: "",
-        overviewImage: "",
+        image: "assets/images/hippofeedininnaivasha.jpg",
+        overviewImage: "assets/images/birdsbynaivashanational park.jpg",
         gallery: [],
         category: "adventure",
         duration: "Day Trip",
@@ -772,7 +770,7 @@ const OAA_TOURS = {
         name: "Aberdare & Mt. Kenya Combo",
         seed: "touraberdaremtk1",
         image: "assets/images/tourcar.jpg",
-        overviewImage: "",
+        overviewImage: "assets/images/elephantsbywatermtkenya.jpg",
         gallery: [],
         category: "safari",
         duration: "5 Days / 4 Nights",
@@ -804,8 +802,8 @@ const OAA_TOURS = {
     "lamu-dhow-sailing-experience": {
         name: "Lamu Dhow Sailing Experience",
         seed: "tourlamudhow1",
-        image: "",
-        overviewImage: "",
+        image: "assets/images/lamu dhow.jpg",
+        overviewImage: "assets/images/lamudhow2.jpg",
         gallery: [],
         category: "culture",
         duration: "Full Day",
@@ -835,8 +833,8 @@ const OAA_TOURS = {
     "malindi-watamu-coastal-escape": {
         name: "Malindi & Watamu Coastal Escape",
         seed: "tourmalindiwatamu1",
-        image: "",
-        overviewImage: "",
+        image: "assets/images/malindicoast.jpg",
+        overviewImage: "https://images.unsplash.com/photo-1692935045168-c80632f56b06?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2F0YW11fGVufDB8fDB8fHww",
         gallery: [],
         category: "beach",
         duration: "4 Days / 3 Nights",

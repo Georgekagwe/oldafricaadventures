@@ -81,6 +81,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Generic "Read More" expand/collapse toggle — any button with class
+  // read-more-toggle and a data-target pointing at a hidden element's id
+  // will show/hide that element and swap its own label. Used on about.html
+  // but works anywhere the same markup pattern is used.
+  document.querySelectorAll('.read-more-toggle').forEach(btn => {
+    const target = document.getElementById(btn.getAttribute('data-target'));
+    if (!target) return;
+    const moreLabel = btn.getAttribute('data-label-more') || btn.textContent;
+    const lessLabel = btn.getAttribute('data-label-less') || 'Show Less';
+    btn.addEventListener('click', () => {
+      const nowHidden = target.hasAttribute('hidden');
+      if (nowHidden) {
+        target.removeAttribute('hidden');
+        btn.textContent = lessLabel;
+      } else {
+        target.setAttribute('hidden', '');
+        btn.textContent = moreLabel;
+      }
+    });
+  });
+
   // Destination/tour filter pills (client-side show/hide by data-category)
   document.querySelectorAll('.filters').forEach(filterBar => {
     const pills = filterBar.querySelectorAll('.filter-pill');

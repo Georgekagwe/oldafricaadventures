@@ -86,7 +86,7 @@ function renderDestinationDetail() {
     seasonsWrap.style.display = 'none';
     bestTimeWrap.style.display = '';
     document.getElementById('destBestTime').innerHTML =
-      `${data.bestTime} See our <a href="blog-article.html" style="color:var(--green-900); font-weight:600;">full seasonal guide</a> for more detail.`;
+      `${data.bestTime} See our <a href="blog-article.html?post=best-time-to-visit-kenya" style="color:var(--green-900); font-weight:600;">full seasonal guide</a> for more detail.`;
   }
 
   // --- Photography: bento (rich) or simple 3-photo grid (fallback) ---

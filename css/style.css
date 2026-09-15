@@ -655,40 +655,74 @@ section {
   font-size: 0.85rem;
 }
 
-/* ---------- Team / people ---------- */
-.people-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+/* ---------- Solo operator spotlight (about.html) ---------- */
+.solo-guide {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  max-width: 820px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-@media (max-width:800px) {
-  .people-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.person-photo {
+.solo-guide-photo {
+  flex: 0 0 240px;
+  width: 240px;
   aspect-ratio: 1;
   border-radius: var(--radius-m);
   overflow: hidden;
-  margin-bottom: 12px;
+  box-shadow: var(--shadow-card);
 }
 
-.person-photo img {
+.solo-guide-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.person h4 {
-  font-size: 0.95rem;
-  margin-bottom: 2px;
+.solo-guide-text {
+  flex: 1 1 340px;
 }
 
-.person span {
-  font-size: 0.8rem;
-  color: var(--ink-500);
+.solo-guide-text h4 {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.solo-guide-role {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--clay-600);
+  margin-bottom: 12px;
+}
+
+.solo-guide-text p {
+  font-size: 0.95rem;
+  color: var(--ink-700);
+  margin: 0;
+}
+
+@media (max-width:700px) {
+  .solo-guide {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* ---------- Read more / expandable content ---------- */
+.read-more-content {
+  margin-top: 20px;
+}
+
+.read-more-content p {
+  margin-bottom: 1em;
+}
+
+.read-more-content p:last-child {
+  margin-bottom: 0;
 }
 
 /* ---------- Footer ---------- */
@@ -1460,17 +1494,13 @@ section {
 }
 
 .related-post {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 14px;
+  display: block;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.related-post img {
-  width: 64px;
-  height: 64px;
-  object-fit: cover;
-  border-radius: 6px;
-  flex-shrink: 0;
+.related-post:last-child {
+  border-bottom: none;
 }
 
 .related-post h6 {
@@ -1478,6 +1508,10 @@ section {
   margin: 0 0 4px;
   font-family: var(--font-body);
   font-weight: 600;
+}
+
+.related-post:hover h6 {
+  color: var(--clay-600);
 }
 
 .related-post span {
@@ -1491,6 +1525,58 @@ section {
   padding: 9px 0;
   border-bottom: 1px solid var(--line);
   font-size: 0.9rem;
+}
+
+/* ---------- Blog listing (text-only cards, no thumbnails) ---------- */
+.featured-article {
+  display: block;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  padding: 40px;
+  margin-bottom: 56px;
+  box-shadow: var(--shadow-card);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.featured-article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(28, 28, 22, 0.08), 0 16px 32px -14px rgba(28, 28, 22, 0.24);
+}
+
+.featured-article h3 {
+  font-size: 1.6rem;
+  margin: 14px 0 10px;
+  max-width: 26ch;
+}
+
+.featured-article p {
+  font-size: 1rem;
+  color: var(--ink-700);
+  max-width: 60ch;
+  margin: 0 0 20px;
+}
+
+.featured-article-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.blog-card .card-body {
+  padding: 22px 22px 24px;
+}
+
+.blog-card h3 {
+  line-height: 1.4;
+}
+
+.blog-card .card-foot {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
 }
 
 /* ---------- Services ---------- */
@@ -1656,4 +1742,178 @@ a.mini-tour:hover h6 {
 
 .breadcrumb a:hover {
   color: var(--ink-900);
+}
+
+/* ---------- Gallery ---------- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.gallery-tile {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--sand-100);
+}
+
+.gallery-tile img,
+.gallery-tile video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .3s ease;
+}
+
+.gallery-tile:hover img,
+.gallery-tile:hover video {
+  transform: scale(1.06);
+}
+
+.gallery-tile-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(28, 28, 22, 0.28);
+  pointer-events: none;
+}
+
+.gallery-tile-play svg {
+  width: 42px;
+  height: 42px;
+  color: #fff;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+}
+
+/* Matches the "// #N" comment above this item in js/gallery-data.js, so
+   you can spot a photo here and go delete its exact entry by number.
+   Always visible (not just on hover) so it works when reviewing on a
+   phone/tablet too, not only with a mouse. */
+.gallery-tile-id {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: rgba(28, 28, 22, 0.62);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 8, 0.94);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox-media {
+  max-width: 88vw;
+  max-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-media img,
+.lightbox-media video {
+  max-width: 88vw;
+  max-height: 80vh;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.lightbox-close,
+.lightbox-nav {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background .15s ease;
+}
+
+.lightbox-close:hover,
+.lightbox-nav:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.lightbox-close {
+  top: 18px;
+  right: 18px;
+  width: 42px;
+  height: 42px;
+}
+
+.lightbox-close svg {
+  width: 20px;
+  height: 20px;
+}
+
+.lightbox-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+}
+
+.lightbox-nav svg {
+  width: 22px;
+  height: 22px;
+}
+
+.lightbox-prev {
+  left: 16px;
+}
+
+.lightbox-next {
+  right: 16px;
+}
+
+.lightbox-counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width:600px) {
+
+  .lightbox-close,
+  .lightbox-nav {
+    width: 38px;
+    height: 38px;
+  }
+
+  .lightbox-prev {
+    left: 8px;
+  }
+
+  .lightbox-next {
+    right: 8px;
+  }
 }
