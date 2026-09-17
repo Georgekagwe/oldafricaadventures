@@ -81,6 +81,7 @@ function renderFooter() {
       <span>© ${new Date().getFullYear()} Old Africa Adventures. All rights reserved.</span>
       <span><a href="privacy-policy.html">Privacy Policy</a></span>
       <span>Nairobi, Kenya</span>
+      <span>Made by Geolabs</span>
     </div>
   </div>`;
 }
