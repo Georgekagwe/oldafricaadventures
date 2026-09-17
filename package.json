@@ -5,6 +5,7 @@
   "description": "Static site + Vercel serverless functions (api/) for the Contact and Get-a-Quote forms.",
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "nodemailer": "^6.9.14",
     "twilio": "^5.2.2"
   }
